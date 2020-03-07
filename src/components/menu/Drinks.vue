@@ -44,7 +44,7 @@
             <div class="col-12">
               <ul>
                 <li style="justify-content:space-between;">
-                  <h4 class="p-0 mt-5 mb-0">Liquor</h4>
+                  <h4 class="p-0 mt-5 mb-0" style="margin-left: -16px">Liquor</h4>
                   <div class="d-flex" style="align-items: flex-end;">
                     <h6 class="mt-5 mr-5 mb-0">30ml</h6>
                     <h6 class="mt-5 mb-0">60ml</h6>

@@ -152,7 +152,7 @@ li {
 
 @media screen and(max-width: 767px) {
   h4 {
-    padding-left: 8px;
+    padding-left: 8px !important;
   }
   ul {
     padding-right: 16px;

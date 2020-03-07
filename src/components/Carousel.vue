@@ -7,7 +7,7 @@
     <div class="carousel-inner">
       <div
         class="carousel-item active"
-        :style="`background-image: url(${require('@/assets/mainsliderbg-006.jpg')})`"
+        :style="`background-image: url(${require('@/assets/carousel001.png')})`"
       >
         <div class="jumbotron">
           <p class="lead">Welcome to Tisa Restaurant &amp; Espresso Exquisite Cusine</p>
@@ -31,7 +31,7 @@
       </div>
       <div
         class="carousel-item"
-        :style="`background-image: url(${require('@/assets/mainsliderbg-005.jpg')})`"
+        :style="`background-image: url(${require('@/assets/carousel002.png')})`"
       >
         <div class="jumbotron">
           <p class="lead">Welcome to Tisa Restaurant &amp; Espresso Exquisite Cusine</p>

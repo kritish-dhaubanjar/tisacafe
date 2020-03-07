@@ -44,10 +44,10 @@
             <div class="col-12">
               <ul>
                 <li style="justify-content:space-between;">
-                  <h4 class="p-0 mt-5 mb-3">Liquor</h4>
-                  <div class="d-flex">
-                    <h6 class="mt-5 mb-3 mr-5">30ml</h6>
-                    <h6 class="mt-5 mb-3">60ml</h6>
+                  <h4 class="p-0 mt-5 mb-0">Liquor</h4>
+                  <div class="d-flex" style="align-items: flex-end;">
+                    <h6 class="mt-5 mr-5 mb-0">30ml</h6>
+                    <h6 class="mt-5 mb-0">60ml</h6>
                   </div>
                 </li>
               </ul>

@@ -1,4 +1,4 @@
-# tisa
+# Tisa Restaurant & Espresso
 
 ## Project setup
 ```

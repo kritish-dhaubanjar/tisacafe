@@ -13,25 +13,26 @@
     <div class="collapse navbar-collapse">
       <ul class="navbar-nav mr-auto ml-auto">
         <li class="nav-item">
-          <a class="nav-link active" @click="go('controls')">
+          <a class="nav-link" @click="go('controls')" :class="active=='controls' ? 'active': ''">
             <span class="spanLeft">[&nbsp;</span>HOME
             <span class="spanRight">]</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" @click="go('menu')">
-            <span class="spanLeft">[</span>&nbsp;MENU
-            <span class="spanRight">]</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" @click="go('about')">
+          <a class="nav-link" @click="go('about')" :class="active=='about' ? 'active': ''">
             <span class="spanLeft">[</span>&nbsp;ABOUT US
             <span class="spanRight">]</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" @click="go('footer')">
+          <a class="nav-link" @click="go('menu')" :class="active=='menu' ? 'active': ''">
+            <span class="spanLeft">[</span>&nbsp;MENU
+            <span class="spanRight">]</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" @click="go('footer')" :class="active=='footer' ? 'active': ''">
             <span class="spanLeft">[</span>&nbsp;CONTACT US
             <span class="spanRight">]</span>
           </a>
@@ -45,13 +46,15 @@
 export default {
   data() {
     return {
-      stick: false
+      stick: false,
+      active: "controls"
     };
   },
   name: "Header",
 
   methods: {
     go(anchor) {
+      this.active = anchor;
       document.getElementById(anchor).scrollIntoView({
         behavior: "smooth",
         block: "start",
@@ -170,6 +173,16 @@ nav {
   }
   .active {
     color: #c5a572 !important;
+    .spanLeft {
+      position: relative;
+      left: 0px;
+      opacity: 1;
+    }
+    .spanRight {
+      position: relative;
+      right: 0px;
+      opacity: 1;
+    }
   }
 }
 

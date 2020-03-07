@@ -20,5 +20,7 @@ npm run build
 npm run lint
 ```
 
+![Tisa Restaurant & Espresso](./screenshots/tisa.png)
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).

@@ -1,5 +1,9 @@
 <template>
-  <div id="controls" class="carousel slide carousel-fade shadow-lg" data-ride="carousel">
+  <div
+    id="controls"
+    class="carousel slide carousel-fade shadow-lg"
+    data-ride="carousel"
+  >
     <ol class="carousel-indicators">
       <li data-target="#controls" data-slide-to="0" class="active"></li>
       <li data-target="#controls" data-slide-to="1"></li>
@@ -10,7 +14,9 @@
         :style="`background-image: url(${require('@/assets/carousel001.png')})`"
       >
         <div class="jumbotron">
-          <p class="lead">Welcome to Tisa Restaurant &amp; Espresso Exquisite Cusine</p>
+          <p class="lead">
+            Welcome to Tisa Restaurant &amp; Espresso Exquisite Cusine
+          </p>
           <h1 class="display-4">Yummy Delicious Dishes</h1>
           <div class="horizontal my-3">
             <hr class="px-4" />
@@ -26,7 +32,12 @@
             Weekends:
             <span>10:00 AM - 9:00 PM</span>
           </p>
-          <a class="btn btn-primary mt-4 mb-5" role="button" @click="goto('footer')">BOOK A TABLE</a>
+          <a
+            class="btn btn-primary mt-4 mb-5"
+            role="button"
+            @click="goto('footer')"
+            >BOOK A TABLE</a
+          >
         </div>
       </div>
       <div
@@ -34,7 +45,9 @@
         :style="`background-image: url(${require('@/assets/carousel002.png')})`"
       >
         <div class="jumbotron">
-          <p class="lead">Welcome to Tisa Restaurant &amp; Espresso Exquisite Cusine</p>
+          <p class="lead">
+            Welcome to Tisa Restaurant &amp; Espresso Exquisite Cusine
+          </p>
           <h1 class="display-4">Enjoy Our Food Experience.</h1>
           <div class="horizontal my-3">
             <hr class="px-4" />
@@ -50,16 +63,31 @@
             Weekends:
             <span>10:00 AM - 9:00 PM</span>
           </p>
-          <a class="btn btn-primary mt-4 mb-5" role="button" @click="goto('footer')">BOOK A TABLE</a>
+          <a
+            class="btn btn-primary mt-4 mb-5"
+            role="button"
+            @click="goto('footer')"
+            >BOOK A TABLE</a
+          >
         </div>
       </div>
     </div>
-    <a class="carousel-control-prev" href="#controls" role="button" data-slide="prev">
+    <a
+      class="carousel-control-prev"
+      href="#controls"
+      role="button"
+      data-slide="prev"
+    >
       <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
       <!-- <span class="sr-only">Previous</span> -->
       <i class="fas fa-chevron-left"></i>
     </a>
-    <a class="carousel-control-next" href="#controls" role="button" data-slide="next">
+    <a
+      class="carousel-control-next"
+      href="#controls"
+      role="button"
+      data-slide="next"
+    >
       <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
       <i class="fas fa-chevron-right"></i>
     </a>
@@ -126,10 +154,12 @@ p {
     &:first-child {
       width: 10vw;
       margin-right: 16px;
+      margin-left: auto;
     }
     &:last-child {
       width: 10vw;
       margin-left: 16px;
+      margin-right: auto;
     }
   }
   i {

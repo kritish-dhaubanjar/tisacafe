@@ -86,7 +86,6 @@
   </div>
 </template>
 
-
 <script>
 import Drinks from "@/components/menu/Drinks";
 import Coffee from "@/components/menu/Coffee";
@@ -178,9 +177,11 @@ p {
     &:first-child {
       width: 10vw;
       margin-right: 16px;
+      margin-left: auto;
     }
     &:last-child {
       width: 10vw;
+      margin-right: auto;
       margin-left: 16px;
     }
   }

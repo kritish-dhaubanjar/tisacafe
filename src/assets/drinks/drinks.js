@@ -43,21 +43,13 @@ module.exports.beer = [{
 ]
 
 module.exports.wine = [{
-        name: "Redbull Blue",
-        price: 250
+        name: "Big Master",
+        price: 750
     },
     {
-        name: "Somersby",
-        price: 150
-    },
-    {
-        name: "Lemon Soda",
-        price: 60
-    },
-    {
-        name: "Mineral Water",
-        price: 30
-    }
+        name: "Kings Hill",
+        price: 750
+	}
 ]
 
 module.exports.hookah = [{

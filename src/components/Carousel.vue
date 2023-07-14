@@ -69,7 +69,7 @@
             class="btn btn-primary mt-4 mb-5"
             role="button"
             @click="goto('footer')"
-            >BOOK RESERSHAL ROOM</a
+            >BOOK REHERSHAL ROOM</a
           >
         </div>
       </div>

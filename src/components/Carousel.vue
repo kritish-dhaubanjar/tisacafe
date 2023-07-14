@@ -15,9 +15,10 @@
       >
         <div class="jumbotron">
           <p class="lead">
-            Welcome to Tisa Restaurant &amp; Espresso Exquisite Cusine
+            Welcome to LOOP FOOD CAFE
           </p>
-          <h1 class="display-4">Yummy Delicious Dishes</h1>
+          <h1 class="display-4">Enjoy Our Food Experience</h1>
+          <h1>(Yummy Delicious Fast Food)</h1>
           <div class="horizontal my-3">
             <hr class="px-4" />
             <i class="fas fa-utensils"></i>
@@ -26,17 +27,17 @@
           <p>OPENING HOURS</p>
           <p>
             Sunday - Friday:
-            <span>10:00 AM - 9:00 PM</span>
+            <span>7:00 AM - 9:00 PM</span>
           </p>
           <p>
             Weekends:
-            <span>10:00 AM - 9:00 PM</span>
+            <span>7:00 AM - 9:00 PM</span>
           </p>
           <a
             class="btn btn-primary mt-4 mb-5"
             role="button"
-            @click="goto('footer')"
-            >BOOK A TABLE</a
+            @click="goto('menu')"
+            >SEE MENU</a
           >
         </div>
       </div>
@@ -46,28 +47,29 @@
       >
         <div class="jumbotron">
           <p class="lead">
-            Welcome to Tisa Restaurant &amp; Espresso Exquisite Cusine
+            Welcome to LOOP ROOM STUDIO
           </p>
-          <h1 class="display-4">Enjoy Our Food Experience.</h1>
+          <h1 class="display-4">Enjoy Our Practice Session</h1>
+          <h1>(Before the stage)</h1>
           <div class="horizontal my-3">
             <hr class="px-4" />
-            <i class="fas fa-utensils"></i>
+            <i class="fas fa-music"></i>
             <hr class="px-4" />
           </div>
           <p>OPENING HOURS</p>
           <p>
             Sunday - Friday:
-            <span>10:00 AM - 9:00 PM</span>
+            <span>7:00 AM - 9:00 PM</span>
           </p>
           <p>
             Weekends:
-            <span>10:00 AM - 9:00 PM</span>
+            <span>7:00 AM - 9:00 PM</span>
           </p>
           <a
             class="btn btn-primary mt-4 mb-5"
             role="button"
             @click="goto('footer')"
-            >BOOK A TABLE</a
+            >BOOK RESERSHAL ROOM</a
           >
         </div>
       </div>

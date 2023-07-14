@@ -2,8 +2,8 @@
   <nav class="navbar navbar-expand-sm navbar-dark shadow-md" :class="stick? 'over': ''">
     <a class="navbar-brand m-0" href="#">
       <img src="./../assets/tisa.png" width="35" height="35" alt />
-      Tisa
-      <span class="d-none d-sm-none d-md-inline-block pl-1">Restaurant &amp; Espresso</span>
+      Loop
+      <span class="d-none d-sm-none d-md-inline-block pl-1">Studio Cafe</span>
     </a>
     <span class="navbar-toggler" data-toggle="collapse" aria-expanded="false" @click="showMenu">
       <!-- <span class="navbar-toggler-icon" @click="showMenu"></span> -->
@@ -34,6 +34,13 @@
         <li class="nav-item">
           <a class="nav-link" @click="go('footer')" :class="active=='footer' ? 'active': ''">
             <span class="spanLeft">[</span>&nbsp;CONTACT US
+            <span class="spanRight">]</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" @click="go('footer')" :class="active=='footer' ? 'active': ''">
+            <span class="spanLeft">[</span>&nbsp;BOOK REHERSHAL ROOM
             <span class="spanRight">]</span>
           </a>
         </li>

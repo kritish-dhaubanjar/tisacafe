@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-12 text-center">
           <p class="highlight mb-1 mt-5 pt-5">FOOD AT FIRST SIGHT</p>
-          <h1>Our Restaurant Menu</h1>
+          <h1>Our Cafe Menu</h1>
           <div class="horizontal">
             <hr class="px-4" />
             <i class="fas fa-utensils"></i>

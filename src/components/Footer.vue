@@ -8,17 +8,21 @@
             <ul class="pl-0 mt-4">
               <li>
                 <i class="fas fa-map-marked-alt"></i>
-                <p class="pl-2">Ekantakuna, Lalitpur 44600</p>
+                <p class="pl-2">Pulchowk ,Chhabahal (Gateway to Pimbahal), Lalitpur</p>
               </li>
               <hr />
               <li>
                 <i class="fas fa-at"></i>
-                <p class="pl-2">info@tisacafe.com</p>
+                <p class="pl-2">loopstudiocafe@gmail.com, info@loopstudiocafe.com</p>
               </li>
               <hr />
               <li>
                 <i class="fas fa-phone-volume"></i>
-                <p class="pl-2">Phone: 9846615891, 9847020440</p>
+                <p class="pl-2">Cafe: 9841184996</p>
+              </li>
+              <li>
+                <i class="fas fa-phone-volume"></i>
+                <p class="pl-2">Practice Room: 9702454737</p>
               </li>
               <hr />
             </ul>
@@ -49,12 +53,12 @@
               </li>
               <li>
                 <p>
-                  <i class="fas fa-arrow-right"></i> Buffet Table Service
+                  <i class="fas fa-arrow-right"></i> Well-Sound Proof &amp; Cozy Venue
                 </p>
               </li>
               <li>
                 <p>
-                  <i class="fas fa-arrow-right"></i> Traditional Counter Service
+                  <i class="fas fa-arrow-right"></i> Highly Equipped Rehearsal Room
                 </p>
               </li>
             </ul>
@@ -66,30 +70,16 @@
             <ul class="pl-0 mt-4">
               <li>
                 <p>Sun - Fri</p>
-                <p>10:00 am - 9:00 pm</p>
+                <p>7:00 am - 9:00 pm</p>
               </li>
               <hr />
               <li>
                 <p>Saturday</p>
-                <p>10:00 am - 9:00 pm</p>
+                <p>7:00 am - 9:00 pm</p>
               </li>
               <hr />
             </ul>
             <br />
-
-            <h4>Bar Opening</h4>
-            <ul class="pl-0 mt-4">
-              <li>
-                <p>Sun - Fri</p>
-                <p>10:00 am - 9:00 pm</p>
-              </li>
-              <hr />
-              <li>
-                <p>Saturday</p>
-                <p>10:00 am - 9:00 pm</p>
-              </li>
-              <hr />
-            </ul>
           </div>
 
           <div class="col-12 col-md-6 col-lg-3">
@@ -98,23 +88,11 @@
               src="http://seabreeze.themetechmount.net/wp-content/uploads/2019/07/footer-banner.png"
               class="img-fluid"
               />-->
-              <div
-                class="fb-page"
-                data-href="https://www.facebook.com/TisaRestaurantEspresso/"
-                data-tabs="timeline"
-                data-height="336"
-                data-small-header="false"
-                data-adapt-container-width="true"
-                data-hide-cover="false"
-                data-show-facepile="true"
-              >
-                <blockquote
-                  cite="https://www.facebook.com/TisaRestaurantEspresso/"
-                  class="fb-xfbml-parse-ignore"
-                >
-                  <a
-                    href="https://www.facebook.com/TisaRestaurantEspresso/"
-                  >Tisa Restaurant &amp; Espresso</a>
+              <div class="fb-page" data-href="https://www.facebook.com/loopstudiocafe" data-tabs="timeline"
+                data-height="336" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
+                data-show-facepile="true">
+                <blockquote cite="https://www.facebook.com/loopstudiocafe" class="fb-xfbml-parse-ignore">
+                  <a href="https://www.facebook.com/loopstudiocafe">Loop Studio Cafe</a>
                 </blockquote>
               </div>
             </div>
@@ -123,7 +101,7 @@
       </div>
       <div class="row no-gutters text-center mt-2 copy pt-3 px-2">
         <div class="col-12">
-          <p>Copyright &copy; {{new Date().getFullYear()}} Tisa Restaurant &amp; Espresso. Crafted by theGimmickBox</p>
+          <p>Copyright &copy; {{ new Date().getFullYear() }} Loop Studio Cafe</p>
         </div>
       </div>
     </div>
@@ -151,10 +129,12 @@ window.onresize = () => {
 
 ul {
   list-style: none;
+
   li {
     display: flex;
     font-weight: 300;
     font-size: 15px;
+
     svg {
       color: #c5a572;
     }

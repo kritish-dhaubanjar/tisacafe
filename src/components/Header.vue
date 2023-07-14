@@ -1,9 +1,8 @@
 <template>
   <nav class="navbar navbar-expand-sm navbar-dark shadow-md" :class="stick? 'over': ''">
     <a class="navbar-brand m-0" href="#">
-      <img src="./../assets/tisa.png" width="35" height="35" alt />
-      Loop
-      <span class="d-none d-sm-none d-md-inline-block pl-1">Studio Cafe</span>
+      <img src="./../assets/loop.png" width="35" height="35" alt />
+      Loop Studio Cafe
     </a>
     <span class="navbar-toggler" data-toggle="collapse" aria-expanded="false" @click="showMenu">
       <!-- <span class="navbar-toggler-icon" @click="showMenu"></span> -->

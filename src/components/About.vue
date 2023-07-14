@@ -2,7 +2,7 @@
   <div id="about">
     <div class="container py-4">
       <div class="row">
-        <div class="col-12 col-md-7 col-lg-7">
+        <div class="col-12">
           <p class="highlight mb-1">OUR STORY</p>
           <h1>Welcome To Loop Studio Cafe</h1>
 
@@ -45,11 +45,8 @@
               </ul>
             </div>
           </div>
+          <img src="./../assets/flex.jpg" class="img-fluid"/>
         </div>
-        <div
-          class="col-12 col-md-5 col-lg-5 tisa"
-          :style="`background-image: url(${require('@/assets/wall.png')})`"
-        ></div>
       </div>
     </div>
   </div>

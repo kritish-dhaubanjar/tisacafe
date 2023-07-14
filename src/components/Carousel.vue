@@ -11,7 +11,7 @@
     <div class="carousel-inner">
       <div
         class="carousel-item active"
-        :style="`background-image: url(${require('@/assets/carousel001.png')})`"
+        :style="`background-image: url(${require('@/assets/carousel001.jpg')})`"
       >
         <div class="jumbotron">
           <p class="lead">
@@ -43,7 +43,7 @@
       </div>
       <div
         class="carousel-item"
-        :style="`background-image: url(${require('@/assets/carousel002.png')})`"
+        :style="`background-image: url(${require('@/assets/carousel002.jpg')})`"
       >
         <div class="jumbotron">
           <p class="lead">

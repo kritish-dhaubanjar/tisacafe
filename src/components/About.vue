@@ -6,7 +6,7 @@
           <p class="highlight mb-1">OUR STORY</p>
           <h1>Welcome To Loop Studio Cafe</h1>
 
-          <p>With an aim of creating a comprehensive service for all kinds of music and delicious needs, staying true to the name LOOP studio cafe, we aim to create a flexible atmospheric space. We also stick to the phase EAT SLEEP MUSIC REPEAT which is the main theme of the LOOP. Located in a Prime corner, 'Loop studio cafe' is one of the most celebrated and happening. Location in pulchowk , Lalitpur (Gateway to Pimbahal). Our Place has emerged as one of the major venues, for fine dining with friends & family along with small corporate meetings or other functions.</p>
+          <p>With an aim of creating a comprehensive service for all kinds of music and delicious needs, staying true to the name LOOP studio cafe, we aim to create a flexible atmospheric space both foodies and musicans as we have delicious food and spaceious reharshal room at the same time. We also stick to the phase EAT SLEEP MUSIC REPEAT which is the main theme of the LOOP. Located in a Prime corner, 'Loop studio cafe' is one of the most celebrated and happening location in pulchowk , Lalitpur (Gateway to Pimbahal). Our Place has emerged as one of the major venues, for fine dining with friends & family along with small corporate meetings or other functions.</p>
 
           <br />
           <div class="row no-gutters mb-4">

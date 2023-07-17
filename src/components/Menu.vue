@@ -124,11 +124,11 @@ export default {
 .card {
   transition: 500ms;
   &:hover {
-    background-color: $primary;
+    background-color: #f2ea49;
     cursor: pointer;
     svg,
     p {
-      color: #fff;
+      color: #000;
     }
   }
   border: 1px solid #c5a572;
@@ -151,11 +151,11 @@ export default {
 .highlight {
   font-weight: 600;
   font-size: 14px;
-  color: $primary;
+  color: #f2ea49;
 }
 
 svg {
-  color: $primary;
+  color: #f2ea49;
 }
 
 ul {
@@ -194,10 +194,10 @@ p {
 }
 
 .active {
-  background-color: $primary;
+  background-color: #f2ea49;
   svg,
   p {
-    color: #fff;
+    color: #000;
   }
 }
 

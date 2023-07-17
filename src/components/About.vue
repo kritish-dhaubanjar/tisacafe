@@ -61,11 +61,11 @@
 .highlight {
   font-weight: 600;
   font-size: 14px;
-  color: #c5a572;
+  color: #f2ea49;
 }
 
 svg {
-  color: #c5a572;
+  color: #f2ea49;
 }
 
 ul {

@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-sm navbar-dark shadow-md" :class="stick? 'over': ''">
+  <nav class="navbar navbar-expand-lg navbar-dark shadow-md" :class="stick ? 'over' : ''">
     <a class="navbar-brand m-0" href="#">
       <img src="./../assets/loop.png" width="35" height="35" alt />
       Loop Studio Cafe
@@ -10,37 +10,36 @@
     </span>
 
     <div class="collapse navbar-collapse">
-      <ul class="navbar-nav mr-auto ml-auto">
+      <ul class="navbar-nav mr-auto ml-auto d-flex align-items-center">
         <li class="nav-item">
-          <a class="nav-link" @click="go('controls')" :class="active=='controls' ? 'active': ''">
+          <a class="nav-link" @click="go('controls')" :class="active == 'controls' ? 'active' : ''">
             <span class="spanLeft">[&nbsp;</span>HOME
             <span class="spanRight">]</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" @click="go('about')" :class="active=='about' ? 'active': ''">
+          <a class="nav-link" @click="go('about')" :class="active == 'about' ? 'active' : ''">
             <span class="spanLeft">[</span>&nbsp;ABOUT US
             <span class="spanRight">]</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" @click="go('menu')" :class="active=='menu' ? 'active': ''">
+          <a class="nav-link" @click="go('menu')" :class="active == 'menu' ? 'active' : ''">
             <span class="spanLeft">[</span>&nbsp;MENU
             <span class="spanRight">]</span>
           </a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" @click="go('footer')" :class="active=='footer' ? 'active': ''">
+          <a class="nav-link" @click="go('footer')" :class="active == 'footer' ? 'active' : ''">
             <span class="spanLeft">[</span>&nbsp;CONTACT US
             <span class="spanRight">]</span>
           </a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" @click="go('footer')" :class="active=='footer' ? 'active': ''">
-            <span class="spanLeft">[</span>&nbsp;BOOK REHERSHAL ROOM
-            <span class="spanRight">]</span>
+          <a role="button" class="btn btn-loop" href="https://book.loopstudiocafe.com" target="_blank">
+            BOOK REHERSHAL ROOM
           </a>
         </li>
       </ul>
@@ -91,6 +90,7 @@ export default {
 nav {
   background-color: transparent;
   z-index: 1000;
+
   .navbar-brand {
     font-family: "Bellefair";
     font-weight: 600;
@@ -98,11 +98,13 @@ nav {
     font-weight: 500;
     display: flex;
     align-items: center;
+
     img {
       margin-right: 4px;
     }
   }
 }
+
 .spanLeft {
   transition: 250ms;
   position: relative;
@@ -110,6 +112,7 @@ nav {
   opacity: 0;
   color: #c5a572;
 }
+
 .spanRight {
   transition: 250ms;
   position: relative;
@@ -121,9 +124,11 @@ nav {
 .over {
   // background-color: rgba(1, 14, 26, 1);
   background: #fff;
+
   .navbar-brand {
     color: #1f2438;
   }
+
   .nav-link {
     color: #1f2438 !important;
     transition: 250ms;
@@ -131,11 +136,13 @@ nav {
     &:hover {
       transition: 250ms;
       color: #c5a572 !important;
+
       .spanLeft {
         position: relative;
         left: 0px;
         opacity: 1;
       }
+
       .spanRight {
         position: relative;
         right: 0px;
@@ -143,12 +150,14 @@ nav {
       }
     }
   }
+
   transition: 500ms ease-out;
   opacity: 1;
   position: sticky;
   top: 0;
   border-bottom: 1px solid rgba(102, 102, 102, 0.25);
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+
   .navbar-toggler {
     color: #1f2438;
   }
@@ -162,14 +171,17 @@ nav {
     font-family: "Montserrat";
     font-weight: bold;
     transition: 250ms;
+
     &:hover {
       transition: 250ms;
       color: #c5a572;
+
       .spanLeft {
         position: relative;
         left: 0px;
         opacity: 1;
       }
+
       .spanRight {
         position: relative;
         right: 0px;
@@ -177,13 +189,16 @@ nav {
       }
     }
   }
+
   .active {
     color: #c5a572 !important;
+
     .spanLeft {
       position: relative;
       left: 0px;
       opacity: 1;
     }
+
     .spanRight {
       position: relative;
       right: 0px;
@@ -195,6 +210,7 @@ nav {
 .navbar-toggler {
   border: 0 !important;
 }
+
 a {
   cursor: pointer;
 }
@@ -205,8 +221,8 @@ a {
   }
 
   .navbar {
-    padding-top: 18px;
-    padding-bottom: 18px;
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
 }
 
@@ -218,5 +234,10 @@ a {
   .nav-item .nav-link {
     padding-right: 0 !important;
   }
+}
+
+.btn-loop{
+  font-weight: bold;
+  background-color: #f2ea49;
 }
 </style>

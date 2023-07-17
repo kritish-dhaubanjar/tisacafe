@@ -84,10 +84,6 @@
 
           <div class="col-12 col-md-6 col-lg-3">
             <div id="fb-container">
-              <!-- <img
-              src="http://seabreeze.themetechmount.net/wp-content/uploads/2019/07/footer-banner.png"
-              class="img-fluid"
-              />-->
               <div class="fb-page" data-href="https://www.facebook.com/loopstudiocafe" data-tabs="timeline"
                 data-height="336" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
                 data-show-facepile="true">
@@ -136,7 +132,7 @@ ul {
     font-size: 15px;
 
     svg {
-      color: #c5a572;
+      color: #f2ea49;
     }
   }
 

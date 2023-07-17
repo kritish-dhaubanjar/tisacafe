@@ -1,18 +1,11 @@
 <template>
-  <div
-    id="controls"
-    class="carousel slide carousel-fade shadow-lg"
-    data-ride="carousel"
-  >
+  <div id="controls" class="carousel slide carousel-fade shadow-lg" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#controls" data-slide-to="0" class="active"></li>
       <li data-target="#controls" data-slide-to="1"></li>
     </ol>
     <div class="carousel-inner">
-      <div
-        class="carousel-item active"
-        :style="`background-image: url(${require('@/assets/carousel001.jpg')})`"
-      >
+      <div class="carousel-item active" :style="`background-image: url(${require('@/assets/carousel001.jpg')})`">
         <div class="jumbotron">
           <p class="lead">
             Welcome to LOOP FOOD CAFE
@@ -33,18 +26,10 @@
             Weekends:
             <span>7:00 AM - 9:00 PM</span>
           </p>
-          <a
-            class="btn btn-primary mt-4 mb-5"
-            role="button"
-            @click="goto('menu')"
-            >SEE MENU</a
-          >
+          <a class="btn btn-loop mt-4 mb-5" role="button" @click="goto('menu')">SEE MENU</a>
         </div>
       </div>
-      <div
-        class="carousel-item"
-        :style="`background-image: url(${require('@/assets/carousel002.jpg')})`"
-      >
+      <div class="carousel-item" :style="`background-image: url(${require('@/assets/carousel002.jpg')})`">
         <div class="jumbotron">
           <p class="lead">
             Welcome to LOOP ROOM STUDIO
@@ -65,31 +50,17 @@
             Weekends:
             <span>7:00 AM - 9:00 PM</span>
           </p>
-          <a
-            class="btn btn-primary mt-4 mb-5"
-            role="button"
-            @click="goto('footer')"
-            >BOOK REHERSHAL ROOM</a
-          >
+          <a class="btn btn-loop mt-4 mb-5" role="button" target="_blank" href="https://book.loopstudiocafe.com">BOOK
+            REHERSHAL ROOM</a>
         </div>
       </div>
     </div>
-    <a
-      class="carousel-control-prev"
-      href="#controls"
-      role="button"
-      data-slide="prev"
-    >
+    <a class="carousel-control-prev" href="#controls" role="button" data-slide="prev">
       <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
       <!-- <span class="sr-only">Previous</span> -->
       <i class="fas fa-chevron-left"></i>
     </a>
-    <a
-      class="carousel-control-next"
-      href="#controls"
-      role="button"
-      data-slide="next"
-    >
+    <a class="carousel-control-next" href="#controls" role="button" data-slide="next">
       <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
       <i class="fas fa-chevron-right"></i>
     </a>
@@ -117,13 +88,16 @@ export default {
   font-size: 32px;
   color: #fff;
 }
+
 p {
   color: #d0d0d0;
   font-weight: 600;
+
   span {
     font-weight: 400;
   }
 }
+
 .carousel {
   margin-top: -64px;
 }
@@ -132,6 +106,7 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
   .jumbotron {
     text-align: center;
     margin-bottom: 0;
@@ -141,8 +116,9 @@ p {
     background: transparent;
     width: 100%;
     color: #fff;
+
     .lead {
-      color: $primary;
+      color: #f2ea49;
       font-weight: 600;
     }
   }
@@ -151,24 +127,41 @@ p {
 .horizontal {
   display: flex;
   align-items: center;
+
   hr {
     border-top: 1px solid $primary;
+
     &:first-child {
       width: 10vw;
       margin-right: 16px;
       margin-left: auto;
     }
+
     &:last-child {
       width: 10vw;
       margin-left: 16px;
       margin-right: auto;
     }
   }
+
   i {
     flex: 1;
   }
+
   svg {
     font-size: 32px !important;
   }
+}
+
+
+.btn-loop {
+  font-weight: bold;
+  color: #212529;
+
+  &:hover, &:active {
+    color: #212529;
+  }
+
+  background-color: #f2ea49;
 }
 </style>

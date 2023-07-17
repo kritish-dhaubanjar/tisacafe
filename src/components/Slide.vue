@@ -16,7 +16,7 @@
           <a @click="go('footer')">CONTACT US</a>
         </li>
         <li>
-          <a @click="go('footer')">BOOK REHERSHAL ROOM</a>
+          <a href="https://book.loopstudiocafe.com" target="_blank">BOOK REHERSHAL ROOM</a>
         </li>
       </ul>
     </div>

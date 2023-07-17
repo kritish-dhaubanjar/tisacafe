@@ -8,7 +8,7 @@
             <ul class="pl-0 mt-4">
               <li>
                 <i class="fas fa-map-marked-alt"></i>
-                <p class="pl-2">Pulchowk ,Chhabahal (Gateway to Pimbahal), Lalitpur</p>
+                <p class="pl-2">Chhabahal, Pulchowk (Gateway to Pimbahal), Lalitpur [Nearest Landmark: Labim Mall (250m)]</p>
               </li>
               <hr />
               <li>

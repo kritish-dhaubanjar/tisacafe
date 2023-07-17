@@ -19,7 +19,7 @@
               </ul>
             </div>
             <div class="col-12">
-              <h4 class="mt-5 mb-3">Beer</h4>
+              <h4 class="mt-5 mb-3">Can Beer</h4>
               <ul>
                 <li v-for="item in beer" :key="item.name">
                   <p>{{item.name}}</p>
@@ -28,14 +28,14 @@
                 </li>
               </ul>
 
-              <h4 class="mt-5 mb-3">Wine</h4>
-              <ul>
-                <li v-for="item in wine" :key="item.name">
-                  <p>{{item.name}}</p>
-                  <hr class="mx-1" />
-                  <p>{{item.price}}</p>
-                </li>
-              </ul>
+              <!-- <h4 class="mt-5 mb-3">Wine</h4> -->
+              <!-- <ul> -->
+              <!--   <li v-for="item in wine" :key="item.name"> -->
+              <!--     <p>{{item.name}}</p> -->
+              <!--     <hr class="mx-1" /> -->
+              <!--     <p>{{item.price}}</p> -->
+              <!--   </li> -->
+              <!-- </ul> -->
             </div>
           </div>
         </div>
@@ -63,7 +63,7 @@
               </ul>
             </div>
             <div class="col-12">
-              <h4 class="mt-5 mb-3">Hookah/Cigerattes</h4>
+              <h4 class="mt-5 mb-3">Cigerattes</h4>
               <ul>
                 <li v-for="item in hookah" :key="item.name">
                   <div>

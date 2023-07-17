@@ -19,7 +19,7 @@
               <div class="card shadow-lg">
                 <div class="card-body">
                   <i class="fas fa-pizza-slice"></i>
-                  <p>Lunch I</p>
+                  <p>Fast Food</p>
                 </div>
               </div>
             </div>
@@ -31,7 +31,7 @@
               <div class="card shadow-lg">
                 <div class="card-body">
                   <i class="fas fa-utensils"></i>
-                  <p>Lunch II</p>
+                  <p>Lunch</p>
                 </div>
               </div>
             </div>
@@ -43,7 +43,7 @@
               <div class="card shadow-lg">
                 <div class="card-body">
                   <i class="fas fa-mug-hot"></i>
-                  <p>Coffee</p>
+                  <p>Tea &amp; Coffee</p>
                 </div>
               </div>
             </div>

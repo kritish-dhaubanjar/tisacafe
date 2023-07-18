@@ -1,7 +1,7 @@
 module.exports.black = [{
   name: "Regular Black Coffee",
   // detail: 'Single/Double',
-  price: '60'
+  price: '50'
 },
   //     {
   //         name: "Espresso Macchiato",
@@ -53,7 +53,7 @@ module.exports.coldDrinks = [
 
 module.exports.milk = [{
   name: "Regular Milk Coffee",
-  price: 120
+  price: 60
 },
   // {
   //     name: "Cappuccino",
@@ -95,19 +95,19 @@ module.exports.cold = [{
 module.exports.tea = [
   {
     name: "Black Tea",
-    price: 20
+    price: 25
   },
   {
     name: "Milk Tea",
-    price: 35
+    price: 40
   },
   {
     name: "Lemon Tea",
-    price: 25
+    price: 35
   },
   {
     name: "Hot Lemon",
-    price: 25
+    price: 35
   },
   // {
   //   name: "Lemon Iced Tea",

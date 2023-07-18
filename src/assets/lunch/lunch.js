@@ -1,28 +1,28 @@
 module.exports.momo = [{
   name: "Chicken",
-  price: [140, 160, 170, 170]
+  price: [140, 160, 180, 180]
 },
 {
   name: "Buff",
-  price: [120, 140, 150, 150]
+  price: [120, 140, 160, 160]
 },
 {
   name: "Veg",
-  price: [100, 110, 130, 130]
+  price: [100, 110, 140, 140]
 }
 ]
 
 module.exports.chowmein = [{
   name: "Chicken Chowmein",
-  price: 160
+  price: 150
 },
 {
   name: "Buff Chowmein",
-  price: 140
+  price: 120
 },
 {
   name: "Veg Chowmein",
-  price: 120
+  price: 160
 },
 {
   name: "Mix Chowmein",
@@ -283,6 +283,10 @@ module.exports.fried = [
   {
     name: "Chicken Wings",
     price: [120]
+  },
+  {
+    name: "Chicken Leg Piece",
+    price: [60]
   }
 ]
 
@@ -312,15 +316,15 @@ module.exports.veg = [{
 },
 {
   name: "Chips Chilly",
-  price: 150
+  price: 130
 },
 {
   name: "Tofu Chilly",
-  price: 190
+  price: 160
 },
 {
   name: "Paneer Chilly",
-  price: 210
+  price: 230
 },
 {
   name: "Mushroom Chilly",
@@ -340,7 +344,7 @@ module.exports.veg = [{
 },
 {
   name: "Chauchau Sadheko",
-  price: 80
+  price: 100
 },
 ]
 

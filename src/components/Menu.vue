@@ -1,3 +1,4 @@
+
 <template>
   <div id="menu" class="pt-5">
     <div class="container pb-5">
@@ -11,63 +12,12 @@
             <hr class="px-4" />
           </div>
           <div class="row no-gutters mt-5 mb-5 pb-3">
-            <div
-              class="col-4 col-sm-3 col-md-2"
-              @click="showMenu(0)"
-              :class="menus.indexOf(current) == 0 ? 'active' : ''"
-            >
+            <div v-for="(menu, index) in menus" :key="menu.name" class="col-4 col-sm-3 col-md-2" @click="showMenu(index)"
+              :class="active == index ? 'active' : ''">
               <div class="card shadow-lg">
                 <div class="card-body">
-                  <i class="fas fa-pizza-slice"></i>
-                  <p>Fast Food</p>
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-4 col-sm-3 col-md-2"
-              @click="showMenu(1)"
-              :class="menus.indexOf(current) == 1 ? 'active' : ''"
-            >
-              <div class="card shadow-lg">
-                <div class="card-body">
-                  <i class="fas fa-utensils"></i>
-                  <p>Lunch</p>
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-4 col-sm-3 col-md-2"
-              @click="showMenu(2)"
-              :class="menus.indexOf(current) == 2 ? 'active' : ''"
-            >
-              <div class="card shadow-lg">
-                <div class="card-body">
-                  <i class="fas fa-mug-hot"></i>
-                  <p>Tea &amp; Coffee</p>
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-4 col-sm-3 col-md-2"
-              @click="showMenu(3)"
-              :class="menus.indexOf(current) == 3 ? 'active' : ''"
-            >
-              <div class="card shadow-lg">
-                <div class="card-body">
-                  <i class="fas fa-glass-whiskey"></i>
-                  <p>Refreshers</p>
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-4 col-sm-3 col-md-2"
-              @click="showMenu(4)"
-              :class="menus.indexOf(current) == 4 ? 'active' : ''"
-            >
-              <div class="card shadow-lg">
-                <div class="card-body">
-                  <i class="fas fa-glass-cheers"></i>
-                  <p>Bar Drinks</p>
+                  <i :class="menu.icon"></i>
+                  <p>{{ menu.name }}</p>
                 </div>
               </div>
             </div>
@@ -75,41 +25,70 @@
         </div>
       </div>
 
-      <transition
-        enter-active-class="animated fadeIn"
-        leave-active-class="animated fadeOut"
-        mode="out-in"
-      >
-        <component :is="current" />
+      <transition v-if="menus[active]" enter-active-class="animated fadeIn" leave-active-class="animated fadeOut"
+        mode="out-in">
+        <Menu :key="active" :menu="menus[active]" />
       </transition>
     </div>
   </div>
 </template>
 
 <script>
-import Drinks from "@/components/menu/Drinks";
-import Coffee from "@/components/menu/Coffee";
-import Lunch from "@/components/menu/Lunch";
-import LunchII from "@/components/menu/LunchII";
-import Refresh from "@/components/menu/Refresh";
+import Menu from "@/components/menu/Menu";
 export default {
   data() {
     return {
-      current: Lunch,
-      menus: [Lunch, LunchII, Coffee, Refresh, Drinks]
+      menus: [],
+      active: 0,
     };
   },
   methods: {
     showMenu(pos) {
-      this.current = this.menus[pos];
+      this.active = pos;
     }
   },
 
+  async beforeMount() {
+    const [{ entries: types }, { entries: categories }, { entries: menus }] = await Promise.all([
+      fetch('https://api.loopstudiocafe.com/api/collections/get/types').then((res) => res.json()),
+      fetch('https://api.loopstudiocafe.com/api/collections/get/categories').then((res => res.json())),
+      fetch('https://api.loopstudiocafe.com/api/collections/get/menu').then((res) => res.json()),
+    ])
+
+    const menu = types.map(({ name, icon }) => {
+      const categoryNames = categories.filter((category) => category.type.display === name).map(({ name }) => name);
+
+      const menuCategory = categoryNames.reduce((acc, categoryName) => {
+        const menuItems = menus.filter((menu) => menu.category.display === categoryName)
+
+        if (!acc[categoryName]) {
+          acc[categoryName] = []
+        }
+
+        menuItems.forEach(({ name, prices, types }) => {
+          acc[categoryName].push({
+            name,
+            types,
+            prices
+          })
+        })
+
+        return acc;
+      }, {})
+
+      return {
+        name,
+        icon,
+        categoryNames,
+        menuCategory
+      }
+    })
+
+    this.menus = menu;
+  },
+
   components: {
-    Drinks,
-    Coffee,
-    Lunch,
-    Refresh
+    Menu
   }
 };
 </script>
@@ -121,25 +100,31 @@ export default {
   background-color: rgba(0, 0, 0, 0.5);
   padding-bottom: 128px;
 }
+
 .card {
   transition: 500ms;
+
   &:hover {
     background-color: #f2ea49;
     cursor: pointer;
+
     svg,
     p {
       color: #000;
     }
   }
+
   border: 1px solid #c5a572;
   background: transparent;
 }
+
 .card-body {
   padding: 24px 4px;
 
   svg {
     font-size: 32px;
   }
+
   p {
     color: #fff;
     font-weight: 500;
@@ -179,15 +164,18 @@ p {
       margin-right: 16px;
       margin-left: auto;
     }
+
     &:last-child {
       width: 10vw;
       margin-right: auto;
       margin-left: 16px;
     }
   }
+
   i {
     flex: 1;
   }
+
   svg {
     font-size: 32px !important;
   }
@@ -195,6 +183,7 @@ p {
 
 .active {
   background-color: #f2ea49;
+
   svg,
   p {
     color: #000;
@@ -204,7 +193,7 @@ p {
 @media screen and (min-width: 768px) {
   .no-gutters {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 </style>

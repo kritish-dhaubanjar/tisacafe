@@ -1,10 +1,6 @@
 <template>
   <div id="app">
-    <div v-if="false">
-      <Drinks />
-    </div>
-
-    <div v-else>
+    <div>
       <transition enter-active-class="animated fadeIn" leave-active-class="animated fadeOut">
         <Slide @hideMenu="hideMenu" v-if="show" />
       </transition>
@@ -28,7 +24,6 @@ import About from "@/components/About";
 import Menu from "@/components/Menu";
 import Footer from "@/components/Footer";
 import Map from "@/components/Map";
-import Drinks from "@/components/menu/Drinks";
 
 export default {
   name: "App",
@@ -53,7 +48,6 @@ export default {
     Footer,
     Slide,
     Map,
-    Drinks
   }
 };
 </script>

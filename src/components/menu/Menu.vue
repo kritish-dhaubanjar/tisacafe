@@ -11,7 +11,7 @@
             <div v-for="categoryName of menu.categoryNames" :key="categoryName" class="col-12 col-md-6">
               <h4 class="mt-5">{{ categoryName }}</h4>
               <ul>
-                <div class="d-flex" style="justify-content: flex-end;">
+                <div class="d-flex" style="justify-content: flex-end;" v-if="menu.menuCategory[categoryName].length">
                   <h6 class="mb-3" v-for="(type, index) in  menu.menuCategory[categoryName][0].types " :key="type"
                     :class="{ 'ml-1': index > 0 }">{{ type }}</h6>
                 </div>
@@ -41,6 +41,10 @@
 <script>
 export default {
   props: ["menu"],
+
+  mounted(){
+    console.log(JSON.stringify(this.menu))
+  }
 };
 </script>
 

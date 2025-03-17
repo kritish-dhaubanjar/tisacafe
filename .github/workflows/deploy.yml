@@ -1,0 +1,55 @@
+name: Node.js CI
+
+on:
+  push:
+    branches: [loopstudiocafe]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x.x]
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm install
+      - run: npm run build
+
+      - name: Generate dist.zip
+        run: |
+          cd dist
+          zip -r dist.zip ./*
+
+      - name: Configure SSH
+        run: |
+          mkdir -p ~/.ssh/
+          echo "$SSH_KEY" > ~/.ssh/deploy.key
+          chmod 600 ~/.ssh/deploy.key
+          cat >>~/.ssh/config <<END
+          Host deploy
+            HostName $SSH_HOST
+            User $SSH_USER
+            IdentityFile ~/.ssh/deploy.key
+            IdentitiesOnly yes
+            StrictHostKeyChecking no
+          END
+        env:
+          SSH_USER: ${{ secrets.DEPLOY_SSH_USER }}
+          SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+          SSH_HOST: ${{ secrets.DEPLOY_SSH_HOST }}
+
+      - name: SCP dist.zip to /home/kritish3/loopstudiocafe/loopstudiocafe.com
+        run: |
+          scp dist/dist.zip deploy:/home/kritish3/loopstudiocafe/loopstudiocafe.com
+
+      - name: Delete /home/kritish3/applications/dev.myunepal.com/public/*
+        run: |
+          ssh deploy "cd /home/kritish3/loopstudiocafe/loopstudiocafe.com && find . ! -name .htaccess ! -name index.php ! -name robots.txt ! -name web.config ! -name category_images ! -name storage ! -name dist.zip -delete"
+          ssh deploy "unzip -q /home/kritish3/loopstudiocafe/loopstudiocafe.com/dist.zip -d /home/kritish3/loopstudiocafe/loopstudiocafe.com"
+          ssh deploy "rm /home/kritish3/loopstudiocafe/loopstudiocafe.com/dist.zip"

@@ -18,11 +18,11 @@
               <hr />
               <li>
                 <i class="fas fa-phone-volume"></i>
-                <p class="pl-2">Cafe: 9841184996</p>
+                <p class="pl-2">Cafe: 9803240488</p>
               </li>
               <li>
                 <i class="fas fa-phone-volume"></i>
-                <p class="pl-2">Practice Room: 9702454737</p>
+                <p class="pl-2">Practice Room: 9841471328</p>
               </li>
               <hr />
             </ul>

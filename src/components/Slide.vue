@@ -7,9 +7,6 @@
           <a @click="go('controls')">HOME</a>
         </li>
         <li>
-          <a @click="go('menu')">MENU</a>
-        </li>
-        <li>
           <a @click="go('about')">ABOUT US</a>
         </li>
         <li>

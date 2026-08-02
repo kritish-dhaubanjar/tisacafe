@@ -5,34 +5,10 @@
       <li data-target="#controls" data-slide-to="1"></li>
     </ol>
     <div class="carousel-inner">
-      <div class="carousel-item active" :style="`background-image: url(${require('@/assets/carousel001.jpg')})`">
+      <div class="carousel-item active" :style="`background-image: url(${require('@/assets/carousel002.jpg')})`">
         <div class="jumbotron">
           <p class="lead">
-            Welcome to LOOP FOOD CAFE
-          </p>
-          <h1 class="display-4">Enjoy Our Food Experience</h1>
-          <h1>(Yummy Delicious Fast Food)</h1>
-          <div class="horizontal my-3">
-            <hr class="px-4" />
-            <i class="fas fa-utensils"></i>
-            <hr class="px-4" />
-          </div>
-          <p>OPENING HOURS</p>
-          <p>
-            Sunday - Friday:
-            <span>7:00 AM - 9:00 PM</span>
-          </p>
-          <p>
-            Weekends:
-            <span>7:00 AM - 9:00 PM</span>
-          </p>
-          <a class="btn btn-loop mt-4 mb-5" role="button" @click="goto('menu')">SEE MENU</a>
-        </div>
-      </div>
-      <div class="carousel-item" :style="`background-image: url(${require('@/assets/carousel002.jpg')})`">
-        <div class="jumbotron">
-          <p class="lead">
-            Welcome to LOOP ROOM STUDIO
+            Welcome to LOOP STATION
           </p>
           <h1 class="display-4">Enjoy Our Practice Session</h1>
           <h1>(Before the stage)</h1>

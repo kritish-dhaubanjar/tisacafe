@@ -8,7 +8,6 @@
       <Carousel />
       <div id="background">
         <About />
-        <Menu />
       </div>
       <Map />
       <Footer />
@@ -21,7 +20,6 @@ import Header from "@/components/Header";
 import Slide from "@/components/Slide";
 import Carousel from "@/components/Carousel";
 import About from "@/components/About";
-import Menu from "@/components/Menu";
 import Footer from "@/components/Footer";
 import Map from "@/components/Map";
 
@@ -44,7 +42,6 @@ export default {
     Header,
     Carousel,
     About,
-    Menu,
     Footer,
     Slide,
     Map,

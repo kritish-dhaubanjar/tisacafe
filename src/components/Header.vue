@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark shadow-md" :class="stick ? 'over' : ''">
     <a class="navbar-brand m-0" href="#">
       <img src="./../assets/loop.png" width="35" height="35" alt />
-      Loop Studio Cafe
+      Loop Station
     </a>
     <span class="navbar-toggler" data-toggle="collapse" aria-expanded="false" @click="showMenu">
       <!-- <span class="navbar-toggler-icon" @click="showMenu"></span> -->
@@ -23,13 +23,6 @@
             <span class="spanRight">]</span>
           </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" @click="go('menu')" :class="active == 'menu' ? 'active' : ''">
-            <span class="spanLeft">[</span>&nbsp;MENU
-            <span class="spanRight">]</span>
-          </a>
-        </li>
-
         <li class="nav-item">
           <a class="nav-link" @click="go('footer')" :class="active == 'footer' ? 'active' : ''">
             <span class="spanLeft">[</span>&nbsp;CONTACT US

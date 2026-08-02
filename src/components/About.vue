@@ -4,9 +4,9 @@
       <div class="row">
         <div class="col-12">
           <p class="highlight mb-1">OUR STORY</p>
-          <h1>Welcome To Loop Studio Cafe</h1>
+          <h1>Welcome To Loop Station</h1>
 
-          <p>With an aim of creating a comprehensive service for all kinds of music and delicious needs, staying true to the name LOOP studio cafe, we aim to create a flexible atmospheric space both foodies and musicans as we have delicious food and spaceious reharshal room at the same time. We also stick to the phase EAT SLEEP MUSIC REPEAT which is the main theme of the LOOP. Located in a Prime corner, 'Loop studio cafe' is one of the most celebrated and happening location in pulchowk , Lalitpur (Gateway to Pimbahal). Our Place has emerged as one of the major venues, for fine dining with friends & family along with small corporate meetings or other functions.</p>
+          <p>Loop Station is a dedicated music rehearsal space built for musicians, bands, and performers who need a professional environment to practice, create, and perfect their sound. We have evolved into a specialized rehearsal studio with one mission—to provide a comfortable, well-equipped space where music comes first. Staying true to our passion for music, we continue to live by our motto:</p>
 
           <br />
           <div class="row no-gutters mb-4">
@@ -14,32 +14,32 @@
               <ul class="p-0">
                 <li>
                   <p>
-                    <i class="fas fa-arrow-circle-right"></i> Attentive staffs &amp; stellar experience
+                    <i class="fas fa-arrow-circle-right"></i> Dedicated rehearsal space for solo artists and bands
                   </p>
                 </li>
                 <li>
                   <p>
-                    <i class="fas fa-arrow-circle-right"></i> Fast food and Extra-ordinary items
+                    <i class="fas fa-arrow-circle-right"></i> Fully air-conditioned practice room
                   </p>
                 </li>
                 <li>
                   <p>
-                    <i class="fas fa-arrow-circle-right"></i> Available in almost all food Apps in Nepal
+                    <i class="fas fa-arrow-circle-right"></i> Professional instruments and sound equipment
                   </p>
                 </li>
                 <li>
                   <p>
-                    <i class="fas fa-arrow-circle-right"></i> Exclusive business corner place (Labim Mall, Pimbahal)
+                    <i class="fas fa-arrow-circle-right"></i> Convenient online rehearsal room booking
                   </p>
                 </li>
                 <li>
                   <p>
-                    <i class="fas fa-arrow-circle-right"></i> Highly equipped Rehearsal Room with Full AC
+                    <i class="fas fa-arrow-circle-right"></i> Prime location in Pulchowk, Lalitpur (Gateway to Pimbahal)
                   </p>
                 </li>
                 <li>
                   <p>
-                    <i class="fas fa-arrow-circle-right"></i> Online Booking service for the Practice room
+                    <i class="fas fa-arrow-circle-right"></i> Comfortable, musician-focused environment for every session
                   </p>
                 </li>
               </ul>
